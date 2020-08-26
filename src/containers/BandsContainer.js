@@ -10,7 +10,7 @@ class BandsContainer extends Component {
   render() {
     return(
       <div>
-        < BandInput 
+        < BandInput
           createBand={this.props.createBand}
         />
         <ul>
@@ -25,7 +25,7 @@ class BandsContainer extends Component {
 const mapStateToProps = ({ bands }) => ({ bands })
 
 const mapDispatchToProps = (dispatch) => ({
-  createBand: (band) => (dispatch({ 
+  createBand: (band) => (dispatch({
     type: "ADD_BAND",
     band: {name: band}
   }))
